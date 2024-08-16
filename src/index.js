@@ -14,9 +14,6 @@ function App() {
     "ul",
     {
       className: `planets-list ${isDarkTheme ? "dark" : ""}`,
-      style: {
-        color: isDarkTheme ? "#66bb6a" : "inherit",
-      },
     },
     React.createElement("li", null, "Mercury"),
     React.createElement("li", null, "Venus"),
@@ -30,7 +27,6 @@ function App() {
 
   return (
     <div>
-      {/* Hello world */}
       <label className="switch" htmlFor="checkbox">
         <input type="checkbox" id="checkbox" />
         <div
@@ -39,7 +35,7 @@ function App() {
         />
       </label>
 
-      <h1 style={{ color: "#999", fontSize: "19px" }}>Solar system planets</h1>
+      <h1>Solar system planets</h1>
 
       {ul}
     </div>
